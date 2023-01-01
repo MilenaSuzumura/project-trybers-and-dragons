@@ -15,6 +15,6 @@ export default class Elf extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._createdRacesInstances;
+    return Elf._createdRacesInstances;
   }
 }
