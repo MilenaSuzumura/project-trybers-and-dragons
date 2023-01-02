@@ -1,26 +1,26 @@
-import Fighter, { SimpleFighter } from './Fighter';
+import Fighter from './Fighter';
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import getInt from './getInt';
-import Race, { Elf } from './Races';
+import Race, { Elf } from './Races/index';
 
 export default class Character implements Fighter {
-  private _dexterity: number;
-  private _strength: number;
-  private _defense: number;
-  private _race = Race;
-  private _archetype = Archetype;
-  private _energy = Energy;
+  private _race: Race;
+  private _archetype: Archetype;
   private _maxLifePoints: number;
   private _lifePoints: number;
-  private _name: string; 
+  private _strength: number;
+  private _defense: number;
+  private _dexterity: number;
+  private _energy: Energy;
+  _name: string;
 
   constructor(name: string) {
+    this._name = name;
     this._dexterity = getInt(1, 10);
     this._defense = getInt(1, 10);
     this._strength = getInt(1, 10);
-    this._race = new Elf(name, this._dexterity);
-    this._name = name;
+    this._race = new Elf(this._name, this._dexterity);
     this._archetype = new Mage(name);
     this._maxLifePoints = this._race.maxLifePoints / 2;
     this._lifePoints = this._maxLifePoints;
@@ -42,6 +42,10 @@ export default class Character implements Fighter {
     return this._strength;
   }
 
+  get race(): Race {
+    return this._race;
+  }
+
   get maxLifePoints(): number {
     return this._maxLifePoints;
   }
@@ -50,18 +54,14 @@ export default class Character implements Fighter {
     return this._lifePoints;
   }
 
-  get race(): Race {
-    return this._race;
-  }
-
   get archetype(): Archetype {
     return this._archetype;
   }
 
   get energy(): Energy {
-    return this._energy;
+    return { ...this._energy };
   }
-
+ 
   receiveDamage(attackPoints: number): number {
     const damage = attackPoints - this._defense;
 
@@ -80,7 +80,7 @@ export default class Character implements Fighter {
     return this._lifePoints;
   }
 
-  attack(enemy: Fighter | SimpleFighter) {
+  attack(enemy: Fighter) {
     enemy.receiveDamage(this._strength);
   }
   

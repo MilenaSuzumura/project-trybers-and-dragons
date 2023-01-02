@@ -15,6 +15,6 @@ export default class Halfling extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this._createdRacesInstances;
+    return Halfling._createdRacesInstances;
   }
 }
