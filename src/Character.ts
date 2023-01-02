@@ -1,10 +1,10 @@
-/* import Fighter from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import getInt from './getInt';
 import Race, { Elf } from './Races';
 
-export default class Character {
+export default class Character implements Fighter {
   private _dexterity: number;
   private _strength: number;
   private _defense: number;
@@ -61,4 +61,44 @@ export default class Character {
   get energy(): Energy {
     return this._energy;
   }
-} */
+
+  receiveDamage(attackPoints: number): number {
+    const damage = attackPoints - this._defense;
+
+    if (damage > 0) {
+      this._lifePoints -= damage;
+    } 
+
+    if (damage < 1) {
+      this._lifePoints -= 1;
+    }
+
+    if (this._lifePoints < 1) {
+      this._lifePoints = -1;
+    }
+
+    return this._lifePoints;
+  }
+
+  attack(enemy: Fighter | SimpleFighter) {
+    enemy.receiveDamage(this._strength);
+  }
+  
+  levelUp() {
+    this._maxLifePoints += getInt(1, 10);
+    this._strength += getInt(1, 10);
+    this._dexterity += getInt(1, 10);
+    this._defense += getInt(1, 10);
+    this._energy.amount = 10;
+
+    if (this._maxLifePoints > this._race.maxLifePoints) {
+      this._maxLifePoints = this._race.maxLifePoints;
+    }
+
+    this._lifePoints = this._maxLifePoints;
+  }
+
+  special(): void {
+    this._strength += getInt(1, 10);
+  }
+}
