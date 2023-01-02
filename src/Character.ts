@@ -1,4 +1,4 @@
-import Fighter from './Fighter';
+/* import Fighter from './Fighter';
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import getInt from './getInt';
@@ -61,4 +61,4 @@ export default class Character {
   get energy(): Energy {
     return this._energy;
   }
-}
+} */
