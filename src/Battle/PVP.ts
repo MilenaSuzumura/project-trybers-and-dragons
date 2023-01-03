@@ -1,4 +1,4 @@
-import Battle from './Battle';
+/* import Battle from './Battle';
 import Fighter from '../Fighter';
 
 export default class PVP extends Battle {
@@ -14,4 +14,4 @@ export default class PVP extends Battle {
   fight() {
     
   }
-}
+} */
