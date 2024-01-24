@@ -1,3 +1,6 @@
+# Trybers And Dragons
+
+
 <!-- # Trybesmith
 
 Trybesmith é um projeto focado em construir uma API Node Express utilizando o Typescript, desenvolvendo um CRUD (Create, Read, Update e Delete) de itens medievais. Utilizo alguns endpoints que irão ler e escrever em um banco de dados, utilizando o Sequelize.
