@@ -1,27 +1,8 @@
 # Trybers And Dragons
 
+Trybers And Dragons é um projeto focado em construir raças, arquétipos, personagens, entre outros; para treinar os pilares da Programação Orientada a Objetos(Herança, Abstração, Encapsulamento e Polimorfismo) e os princípios SOLID utilizando Typescript. 
+
 <strong>OBS:</strong> ESSE PROJETO FOI DESENVOLVIDO NA TRYBE.
-
-<!-- Por que isso é importante?
-Este projeto ajudará você a expandir e sedimentar seus conhecimentos sobre os pilares da Programação Orientada a Objetos e aos princípios SOLID. Ambos os temas são amplamente populares no mundo do desenvolvimento e irão auxiliar você não só na forma de organizar código, mas também na forma de pensar e escrever códigos mais legíveis, seguros e escaláveis.
-
-Compreender e aplicar esses conceitos fará diferença na sua vida como pessoa programadora, especialmente na escrita de códigos de melhor qualidade e criação de aplicações de software mais fáceis de se compreender e manter ao longo do tempo, habilidades muito bem vistas no mercado de trabalho.
-
-O que vamos avaliar?
-O conhecimento dos pilares da Programação Orientada a Objetos: Herança, Abstração, Encapsulamento e Polimorfismo.
-
-A habilidade de criar e utilizar Interface;
-
-A habilidade de utilizar Composição;
-
-Implementar, em TypeScript, Classes, Instâncias, Atributos, Métodos e Objetos;
-
-O conhecimento e aplicação dos princípios SOLID.
-
-O que devo desenvolver?
-Você entrará no mundo de Trybers and Dragons, entendendo e construindo raças, arquétipos, personagens e muito mais, tudo através da aplicação de seus conhecimentos de POO e SOLID. ⚔️ 🐲
-
- -->
 
 <!--
 
