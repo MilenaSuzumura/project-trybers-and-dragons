@@ -1,13 +1,50 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Trybers And Dragons
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Trybers And Dragons é um projeto focado em construir raças, arquétipos, personagens, entre outros; para treinar os pilares da Programação Orientada a Objetos(Herança, Abstração, Encapsulamento e Polimorfismo) e os princípios SOLID utilizando Typescript. 
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+<strong>OBS:</strong> ESSE PROJETO FOI DESENVOLVIDO NA TRYBE.
+
+## Técnologias usadas
+* Typescript;
+* Node;
+* Express;
+* Docker;
+* Jest;
+* Nodemon;
+* Eslint.
+
+## Utilizando o docker
+Para criar os containers, execute: `docker-compose up -d`
+
+Para abrir o terminar do container, execute: `docker exec -it trybers_and_dragons bash`
+
+## Instalando Dependências
+  `npm install`
+
+<!-- ## Banco de dados
+Para criar o banco de dados, execute: `npm run migration`
+
+Para popular o banco de dados: `npm run seed`
+
+## Aplicação Node:
+Para executar a aplicação e acessar as rotas, execute: `npm run dev` -->
+
+
+<!-- 
+
+## Executando Testes
+Para rodar todos os testes:
+
+  `npm test`
+
+<!-- 
+Para rodar um teste específico:
+
+  `npm test nomeDoArquivo`
+
+exemplo:
+`npm test post`
+
+
+<strong>OBS:</strong> Os testes irão rodar com os testes de cobertura
+ -->
