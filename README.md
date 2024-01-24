@@ -4,22 +4,16 @@ Trybers And Dragons é um projeto focado em construir raças, arquétipos, perso
 
 <strong>OBS:</strong> ESSE PROJETO FOI DESENVOLVIDO NA TRYBE.
 
-<!--
-
 ## Técnologias usadas
 * Typescript;
 * Node;
 * Express;
-* Sequelize;
-* Json web tokens;
-* DotEnv;
-* Joi;
 * Docker;
-* MySQL;
 * Jest;
 * Nodemon;
 * Eslint.
 
+<!--
 ## Rotas, entradas e saídas
 
 <details>
