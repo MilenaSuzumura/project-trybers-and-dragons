@@ -1,5 +1,7 @@
 # Trybers And Dragons
 
+<strong>OBS:</strong> ESSE PROJETO FOI DESENVOLVIDO NA TRYBE.
+
 <!-- Por que isso é importante?
 Este projeto ajudará você a expandir e sedimentar seus conhecimentos sobre os pilares da Programação Orientada a Objetos e aos princípios SOLID. Ambos os temas são amplamente populares no mundo do desenvolvimento e irão auxiliar você não só na forma de organizar código, mas também na forma de pensar e escrever códigos mais legíveis, seguros e escaláveis.
 
@@ -22,8 +24,6 @@ Você entrará no mundo de Trybers and Dragons, entendendo e construindo raças,
  -->
 
 <!--
-
-<strong>OBS:</strong> ESSE PROJETO FOI DESENVOLVIDO NA TRYBE.
 
 ## Técnologias usadas
 * Typescript;
